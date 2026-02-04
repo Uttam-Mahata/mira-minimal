@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "datadog": {
+      "command": "node",
+      "args": ["dist/index.js"],
+      "env": {
+        "DD_API_KEY": "${DD_API_KEY}",
+        "DD_APP_KEY": "${DD_APP_KEY}",
+        "DD_SITE": "${DD_SITE:-datadoghq.com}"
+      }
+    }
+  }
+}

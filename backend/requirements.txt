@@ -1,0 +1,9 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+google-adk>=0.5.0
+mcp>=1.0.0
+python-dotenv>=1.0.0
+google-cloud-aiplatform>=1.40.0
+pydantic>=2.10.0
+google-genai
+datadog-api-client>=2.20.0
