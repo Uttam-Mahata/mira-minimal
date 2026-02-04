@@ -6,7 +6,6 @@ When a microservice triggers an alert, this system acts as an intelligent SRE, i
 
 
 
-```
 ## **🚀 Key Features**
 
 * **Model Context Protocol (MCP) Integration:** Uses the TypeScript SDK to run Datadog and Azure DevOps tools as local processes via stdio, allowing the Google ADK to securely execute tool calls.  
