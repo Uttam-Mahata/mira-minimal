@@ -4,57 +4,7 @@
 
 When a microservice triggers an alert, this system acts as an intelligent SRE, investigating the root cause via Datadog and managing the resolution workflow in Azure DevOps using Gemini's reasoning capabilities.
 
-## **🏗 Architecture**
 
-The system operates on an event-driven architecture using a Sequential Agent pattern.
-
-```mermaid
-
-graph TD
-
-    subgraph "Infrastructure Layer"
-
-        MS["Microservices (N Services / M Envs)"] -->|"Error/Spike"| DD[Datadog]
-
-    end
-
-
-
-    subgraph "Event Layer"
-
-        DD -->|"Webhook (Alert Payload)"| BE["Backend Server / Google ADK"]
-
-    end
-
-
-
-    subgraph "Agentic Layer (Sequential)"
-
-        BE -->|"1. Parse"| A1[Webhook Event Handler Agent]
-
-        A1 -->|"2. Context"| A2[Datadog Query Agent]
-
-        A2 -->|"3. Root Cause"| A3[Azure DevOps Handler Agent]
-
-    end
-
-
-
-    subgraph "MCP Tooling Layer (Stdio)"
-
-        A2 <-->|"MCP Protocol"| MCP_DD[Datadog MCP Server]
-
-        A3 <-->|"MCP Protocol"| MCP_ADO[Azure DevOps MCP Server]
-
-    end
-
-
-
-    subgraph "Intelligence"
-
-        BE <-->|"Inference"| Gemini[Google Gemini Pro]
-
-    end
 
 ```
 ## **🚀 Key Features**
