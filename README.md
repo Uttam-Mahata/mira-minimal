@@ -64,6 +64,20 @@ graph TD
 * **Context-Aware Analysis:** Gemini doesn't just read the alert; it queries historical metrics and logs surrounding the event time to determine validity.  
 * **Automated Project Management:** Automatically creates Work Items, Bugs, or Tasks in Azure DevOps and assigns them to the correct engineering team based on service ownership.
 
+## **📸 Screenshots**
+
+### **1. Workflow Test Trigger**
+![Manual Test Trigger](screenshots/manual-test-trigger.png)
+
+### **2. Datadog Webhook Backend Execution**
+![Backend Webhook Processing](screenshots/datadog-webhook-trigger-backend.png)
+
+### **3. AI Agent Investigation & Ticket Decision**
+![Investigation and Decision](screenshots/investigation-ticket-creation.png)
+
+### **4. Azure DevOps Created Bug Ticket**
+![Azure DevOps Ticket](screenshots/azure-devops-created-ticket.png)
+
 ## **🤖 Agent Roles**
 
 ### **1\. Webhook Event Handler Agent**
